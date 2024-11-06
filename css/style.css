@@ -1,14 +1,29 @@
+@font-face {
+    font-family: "Gotham Black";
+    src: url(../fonts/Gotham-Black.otf);
+  }
+  @font-face {
+    font-family: "Gotham-Light";
+    src: url(../Gotham-Font/Gotham-Bold.otf);
+  }
+
+
 body, body *{
     margin: 0;
     padding: 0;
     font-family: "dm sans";
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
 #navigation {
-    background-color: rgba(216, 241, 234, 1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 40px;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 
 }
 
@@ -36,9 +51,16 @@ body, body *{
     color: rgba(27, 102, 222, 1);
 
 }
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
 
 .logo-name {
     text-align: center;
+
 }
 
 .logo-name h3 {
@@ -46,6 +68,7 @@ body, body *{
     font-size: 20px;
     font-weight: 500;
     line-height: 22px;
+    font-family: "Gotham Black";
 }
 
 .navbar-user-link {
@@ -85,15 +108,116 @@ body, body *{
 }
 .loan-advisor-section {
     background-image: linear-gradient(180deg, #D8F1EA 0%, #F8F5EE 100%);
-    padding-top: 100px;
-
-
+  padding-top: 260px;
+    
+}
+.loan-advisor-parent {
+    display: flex;
 }
 .common-heading {
     font-size: 32px;
     font-weight: 700;
     line-height: 40px;
+    font-family: "Gotham-Light";
 }
 .common-paragraph {
+    padding-top: 35px;
+    color: rgba(34, 34, 34, 1);
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+
+.loan-advisor-user-information {
+    width: 388px;
+    background-color: rgba(215, 230, 241, 1);
+    text-align: center;
+    border: 2px solid rgba(83, 172, 255, 1);
+    border-radius: 10px;
+}
+.loan-advisor-user-information p {
+    padding: 20px 0px;
+   color: rgba(27, 102, 222, 1); 
+   font-size: 16px;
+   font-weight: 500;
+}
+.loan-advisor-user-information form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.loan-advisor-user-information form input {
+    width: 348px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    color: rgba(120, 136, 147, 1);
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.submit-button {
+    width: 348px;
+    height: 44px;
+    background-color: rgba(27, 102, 222, 1);
+    border: none;
+    border-radius: 40px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.submit-button:hover {
+    background-color: rgba(22, 84, 184, 1);
+    color: rgba(110, 227, 220, 1);
+}
+.loan-advisor-house {
+    position: relative;
+    top: 57px;
+}
+.show-more-link {
+    margin: auto;
+    width: 20px;
+    padding-top: 56px;
+}
+.know-us-section {
+  background-color:  rgba(248, 244, 238, 1); 
+}
+.know-us-parent {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.heading {
+    text-align: center;
+    max-width: 51%;
+}
+.heading img {
+    padding: 40px 0px;
+}
+.heading span {
+    color: rgba(27, 102, 222, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+.heading .common-paragraph {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.know-us-design-img {
+    padding-top: 190px;
     
+}
+.loan-program-section {
+    background-color:  rgba(248, 244, 238, 1); 
+}
+.heading2 {
+    text-align: center;
+    padding-top: 69px;
 }
