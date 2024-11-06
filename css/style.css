@@ -77,7 +77,7 @@ body, body *{
     align-items: center;
 }
 
-.navbar-user-link a {
+.navbar-link  {
     text-decoration: none;
     color: rgba(120, 136, 147, 1);
     font-weight: 500;
@@ -85,12 +85,12 @@ body, body *{
     transition: 0.3s ease;
 }
 
-.navbar-user-link a:hover {
+.navbar-link:hover {
     color: rgba(27, 102, 222, 1);
 }
 
-.navbar-user-link button {
-    width: 173px;
+.dark-btn {
+   min-width: 173px;
     height: 44px;
     border-radius: 40px;
     border: none;
@@ -100,8 +100,13 @@ body, body *{
     background-color: rgba(27, 102, 222, 1);
     transition: 0.3s ease;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
 }
-.navbar-user-link button:hover {
+.dark-btn:hover {
     background-color: rgba(22, 84, 184, 1);
     color: rgba(110, 227, 220, 1);
     
@@ -220,4 +225,254 @@ body, body *{
 .heading2 {
     text-align: center;
     padding-top: 69px;
+}
+.loan-program-parent {
+    display: flex;
+    gap: 20px;
+    padding-top: 75px;
+    padding-bottom: 40px;
+}
+.loan-program {
+    width: 19%;
+    background-color: rgba(215, 230, 255, 1);
+    border: 2px solid rgba(83, 172, 255, 1);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.loan-program-img {
+    padding: 41px 0px 31px 25px;
+    
+}
+.loan-program-description {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.loan-program-description h3 {
+    padding-bottom: 10px;
+    font-family: "Gotham Black";
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(27, 102, 222, 1);
+}
+.loan-program-description p {
+    color: rgba(27, 102, 222, 1);
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.loan-program-points {
+    display: flex;
+    gap: 4px;
+}
+.loan-program-points img {
+    position: relative;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+}
+.loan-program-points p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(34, 34, 34, 1);
+    padding-bottom: 12px;
+}
+.loan-program-img2 {
+    padding: 34px 0px 24px 30px;
+}
+.loan-program-img3 {
+    padding: 24px 0px 1px 20px;
+}
+.loan-program-img4 {
+    padding: 26px 0px 12px 24px;
+}
+.loan-program-img5 {
+    padding: 38px 0px 23px 21px;
+}
+.loan-program-description .paragraph {
+    padding-bottom: 12px;
+}
+.loan-program:hover {
+    background-color: rgba(224, 231, 233, 1);
+}
+.loan-fund-section {
+    background-color: rgba(27, 102, 222, 1);
+}
+.loan-fund-parent {
+    display: flex;
+    padding: 40px 0px;
+    gap: 80px;
+    justify-content: center;
+}
+
+.loan-fund-description  {
+    position: relative;
+    top: 93px;
+}
+.loan-fund-description h1 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Gotham-Light";
+}
+.loan-fund-description p {
+    padding: 40px 0px;
+    color:  rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.btn-light {
+    width: 213px;
+    height: 44px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(27, 102, 222, 1);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+}
+
+.btn-light:hover {
+    background-color: rgba(27, 102, 222, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);;
+}
+.images-link-section {
+    background-color:  rgba(248, 244, 238, 1); 
+}
+.images-link-parent {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.images-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  
+  align-items: center;
+  justify-content: center;
+}
+.images-link img {
+  background-color: rgba(215, 230, 255, 1);
+  border-radius: 50%;
+  padding: 31px 32px;
+  transition: 0.3s ease;
+}
+.images-link img:hover {
+    background-color: rgba(224, 231, 233, 1);
+}
+.images-link p {
+    color: rgba(120, 136, 147, 1);
+    font-size: 18px;
+    font-weight: 500;
+}
+.broker-section {
+    background-color:  rgba(248, 244, 238, 1); 
+}
+.broker-parent {
+    display: flex;
+    padding-top: 60px;
+}
+.broker-description {
+    max-width: 461px;
+}
+.broker-description h1 {
+    padding: 40px 0px;
+    font-family: "Gotham-Light";
+    font-size: 32px;
+    font-weight: 700px;
+}
+.broker-description p {
+    color: rgba(34, 34, 34, 1);
+    font-size: 16px;
+    font-weight: 400;
+}
+.rate-sheet-link {
+    padding: 40px 0px;
+}
+.rate-sheet-link a {
+  color: rgba(27, 102, 222, 1);
+  font-size: 16px;
+  font-weight: 700;
+}
+.broker-form {
+    width: 100%;
+    max-width: 487px;
+    padding-top: 40px;
+   background-color: rgba(224, 231, 233, 1);
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.broker-form h3 {
+    font-size: 24px;
+    color: rgba(34, 34, 34, 1);
+    margin-bottom: 20px;
+}
+
+.broker-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.broker-form .form-group {
+    display: flex;
+    gap: 20px;
+}
+
+.broker-form .form-group input,
+.broker-form .form-group select,
+.broker-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: rgba(120, 136, 147, 1);
+    border: 1px solid rgba(83, 172, 255, 1);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.broker-form .form-group input[type="text"],
+.broker-form .form-group input[type="email"],
+.broker-form .form-group input[type="tel"] {
+    width: 48%;
+}
+
+.broker-form .form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.broker-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.broker-form button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(27, 102, 222, 1);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.broker-form button:hover {
+    background-color: rgba(22, 84, 184, 1);
+    color: rgba(110, 227, 220, 1);
 }
