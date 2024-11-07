@@ -19,9 +19,9 @@
             <div class="header-wrapper">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Brokers</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#loan-program">Programs</a></li>
+                    <li><a href="#broker">Brokers</a></li>
                 </ul>
                 <div class="logo-name">
                     <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@
         </div>
     </header>
 
-    <section class="loan-advisor-section">
+    <section id="loan-advisor" class="loan-advisor-section">
         <div class="container">
             <div class="loan-advisor-parent">
                 <div class="loan-advisor-description">
@@ -73,7 +73,7 @@
             <a href="#"><img src="img/down-arrow.png" alt=""></a>
         </div>
     </section>
-    <section class="know-us-section">
+    <section id="about-us" class="know-us-section">
         <div class="container">
             <div class="know-us-parent">
                 <div>
@@ -103,7 +103,7 @@
             </div>
         </div>
     </section>
-    <section class="loan-program-section">
+    <section id="loan-program" class="loan-program-section">
         <div class="container">
             <div class="heading2">
                 <h1 class="common-heading">
@@ -407,7 +407,7 @@
             </div>
         </div>
     </section>
-    <section class="broker-section">
+    <section id="broker" class="broker-section">
         <div class="container">
             <div class="broker-parent">
                 <div class="broker-description">
@@ -492,7 +492,8 @@
                 <h1>“The best experience I have ever had. <br>This team is amazing!”</h1>
                 <img src="img/rating-star.png" alt="">
                 <i>The Team are superstars! They are all stars at getting an investment loan <br> closed and are so
-                    incredibly diligent. Other lenders in the investment <br> property space can leave you at the closing
+                    incredibly diligent. Other lenders in the investment <br> property space can leave you at the
+                    closing
                     table at the last minute. Do <br> yourself a favor and work with Lendmarq to get the deal closed
                     right!
                 </i>
@@ -514,10 +515,18 @@
                         Quick links
                     </p>
                     <ul>
-                        <a href="#" class="links"><li>About</li></a>
-                        <a href="#" class="links"><li>Programs</li></a>
-                        <a href="#" class="links"><li>Brokers</li></a>
-                        <a href="#" class="links"><li>Follow us!</li></a>
+                        <a href="#about-us" class="links">
+                            <li>About</li>
+                        </a>
+                        <a href="#loan-program" class="links">
+                            <li>Programs</li>
+                        </a>
+                        <a href="#broker" class="links">
+                            <li>Brokers</li>
+                        </a>
+                        <a href="#loan-advisor" class="links">
+                            <li>Follow us!</li>
+                        </a>
                     </ul>
 
                 </div>
@@ -526,8 +535,12 @@
                         Copyright © 2024 Capital Key Lending
                     </p>
                     <ul>
-                        <a href="#" class="links"><li>Terms of Use</li></a>
-                        <a href="#" class="links"><li>Privacy Policy</li></a>
+                        <a href="#" class="links">
+                            <li>Terms of Use</li>
+                        </a>
+                        <a href="#" class="links">
+                            <li>Privacy Policy</li>
+                        </a>
                         <a href="#" class="footer-btn">APPLY HERE</a>
                     </ul>
 
@@ -536,6 +549,19 @@
         </div>
 
     </section>
+
+
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body>
 
