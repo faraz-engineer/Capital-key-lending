@@ -543,7 +543,7 @@ body * {
     height: 200px;
     resize: none;
 }
-.solid-deal-form {
+.sold-deal-form {
     display: flex;
     flex-direction: column;
 }
